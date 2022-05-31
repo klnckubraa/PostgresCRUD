@@ -77,7 +77,7 @@ namespace PostgresCRUD.Controllers
             return BadRequest();
         }
 
-        [HttpDelete("{Id}")]
+        [HttpDelete("{id}")]
         public IActionResult DeleteConfirmed(int id)
         {
             var data = _dataAccessProvider.GetCustomerSingleRecord(id);
